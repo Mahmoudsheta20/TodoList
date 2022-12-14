@@ -1,0 +1,80 @@
+.App {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  cursor: text !important;
+  text-decoration: None !important;
+  padding: 100px 100px;
+  min-height: 100vh;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.nav {
+  padding: 20px 30px;
+  background-color: beige;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  z-index: 1000 !important;
+}
+.nav h3 {
+  font-size: 25px;
+  font-weight: 600;
+  text-transform: none;
+  background: -webkit-linear-gradient(#8a2387, #501ea9de);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.icon {
+  font-size: 22px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+}
+
+.icon {
+  cursor: pointer;
+  color: white;
+}
+
+.App.Dark {
+  background: #282c34;
+}
+
+.App.Dark svg {
+  color: white;
+}
+.Light svg {
+  color: black;
+}
